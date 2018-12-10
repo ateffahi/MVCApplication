@@ -12,9 +12,9 @@ namespace MVC_Application.ViewModels
         private int _Id;
         private DateTime _AttedanceDate;
         private Boolean _IsPresent;
-        private StudentViewModel _StudentName;
+        private StudentViewModel _Student;
         private int _IdClassRoom;
-        private string _ClassRoom;
+        private string _ClassRoomName;
       
         #endregion
 
@@ -24,10 +24,10 @@ namespace MVC_Application.ViewModels
         [Required]
         public bool IsPresent { get => _IsPresent; set => _IsPresent = value; }
         [Required]
-        public StudentViewModel StudentName { get => _StudentName; set => _StudentName = value; }
+        public StudentViewModel Student { get => _Student; set => _Student = value; }
         [Required]
         public int IdClassRoom { get => _IdClassRoom; set => _IdClassRoom = value; }
         [Required]
-        public string ClassRoom { get => _ClassRoom; set => _ClassRoom = value; }
+        public string ClassRoomName { get => _ClassRoomName; set => _ClassRoomName = value; }
     }
 }

@@ -10,7 +10,7 @@ namespace MVC_Application.Controllers
     {
         public ActionResult Index()
         {
-            
+            ViewBag.Message = $"{$"{DateTime.Now.ToString("hh")}H{DateTime.Now.ToString("mm")}"}I'm with Jonathan thanks";
             return View();
         }
 

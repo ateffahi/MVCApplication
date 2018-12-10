@@ -1,0 +1,34 @@
+﻿@model  MVC_Application.ViewModels.StudentAttendanceViewModel
+<div class="form-group">
+    @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.IsPresent, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        <div class="checkbox">
+            @Html.EditorFor(model => model.IsPresent)
+            @Html.ValidationMessageFor(model => model.IsPresent, "", new { @class = "text-danger" })
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.IdClassRoom, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.IdClassRoom, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.IdClassRoom, "", new { @class = "text-danger" })
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(model => model.ClassRoomName, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.ClassRoomName, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.ClassRoomName, "", new { @class = "text-danger" })
+    </div>
+</div>
