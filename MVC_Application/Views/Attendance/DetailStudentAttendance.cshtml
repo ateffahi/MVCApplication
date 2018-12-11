@@ -1,0 +1,42 @@
+﻿@model MVC_Application.ViewModels.StudentAttendanceViewModel
+
+@{
+    ViewBag.Title = "DetailStudentAttendance";
+}
+
+<h2>DetailStudentAttendance</h2>
+
+<div>
+    <h4>StudentAttendanceViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdClassRoom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdClassRoom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassRoomName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassRoomName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

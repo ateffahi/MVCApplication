@@ -6,10 +6,10 @@
 
 <h2>AddStudentAttendance</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>StudentAttendanceViewModel</h4>
         <hr />
@@ -32,3 +32,7 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

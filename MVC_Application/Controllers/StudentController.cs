@@ -9,7 +9,7 @@ namespace MVC_Application.Controllers
     public class StudentController : Controller
     {
         // GET: Student/
-        public ActionResult Index()
+        public ActionResult AddStudent()
         {
             return View();
         }

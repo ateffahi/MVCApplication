@@ -192,6 +192,8 @@
     <Content Include="Views\Student\AddStudent.cshtml" />
     <Content Include="Views\Attendance\AddStudentAttendance.cshtml" />
     <Content Include="Views\Attendance\EditorTemplates\StudentAttendanceViewModel.cshtml" />
+    <Content Include="Views\Attendance\DetailStudentAttendance.cshtml" />
+    <Content Include="Views\Shared\CustomErrors.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
