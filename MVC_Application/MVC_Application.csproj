@@ -134,8 +134,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AttendanceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewAttendancesController.cs" />
+    <Compile Include="Controllers\NewClassRoomsController.cs" />
+    <Compile Include="Controllers\NewStudentsController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Entities\AttendanceContext.cs" />
+    <Compile Include="Filtres\CustomLogFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -194,6 +198,21 @@
     <Content Include="Views\Attendance\EditorTemplates\StudentAttendanceViewModel.cshtml" />
     <Content Include="Views\Attendance\DetailStudentAttendance.cshtml" />
     <Content Include="Views\Shared\CustomErrors.cshtml" />
+    <Content Include="Views\NewAttendances\Create.cshtml" />
+    <Content Include="Views\NewAttendances\Delete.cshtml" />
+    <Content Include="Views\NewAttendances\Details.cshtml" />
+    <Content Include="Views\NewAttendances\Edit.cshtml" />
+    <Content Include="Views\NewAttendances\Index.cshtml" />
+    <Content Include="Views\NewStudents\Create.cshtml" />
+    <Content Include="Views\NewStudents\Delete.cshtml" />
+    <Content Include="Views\NewStudents\Details.cshtml" />
+    <Content Include="Views\NewStudents\Edit.cshtml" />
+    <Content Include="Views\NewStudents\Index.cshtml" />
+    <Content Include="Views\NewClassRooms\Create.cshtml" />
+    <Content Include="Views\NewClassRooms\Delete.cshtml" />
+    <Content Include="Views\NewClassRooms\Details.cshtml" />
+    <Content Include="Views\NewClassRooms\Edit.cshtml" />
+    <Content Include="Views\NewClassRooms\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

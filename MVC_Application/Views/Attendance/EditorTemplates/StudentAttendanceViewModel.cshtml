@@ -10,7 +10,7 @@
     @Html.LabelFor(model => model.Student.Id, htmlAttributes: new { @class = "control-label col-md-2" })
     <div class="col-md-10">
         @Html.EditorFor(model => model.Student.Id, new { htmlAttributes = new { @class = "form-control" } })
-        @Html.DropDownListFor(m => m.Student.Id, (List<SelectListItem>)ViewBag.StudentsList,"Selectionner l'etudiant ...")
+        @*@Html.DropDownListFor(m => m.Student.Id, (List<SelectListItem>)ViewBag.StudentsList,"Selectionner l'etudiant ...")*@
         @Html.ValidationMessageFor(model => model.Student.Id, "", new { @class = "text-danger" })
     </div>
 </div>
